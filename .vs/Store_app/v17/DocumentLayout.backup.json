@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Azal\\Store_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -62,32 +62,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "Store_app\\Views\\Home\\Index.cshtml*",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Store_app\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T22:38:11.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "Store_app\\Views\\Products\\Create.cshtml",
-              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "Store_app\\Views\\Products\\Create.cshtml",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAmwGkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T17:09:48.538Z"
+              "WhenOpened": "2025-05-06T22:38:11.527Z"
             },
             {
               "$type": "Document",
@@ -103,26 +90,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Store_app\\Views\\Shared\\_Layout.cshtml*",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Store_app\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADIAAAAAAAAAAAAAAD8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T17:00:15.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T17:00:15.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Products\\Index.cshtml",
-              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Index.cshtml*",
-              "RelativeToolTip": "Store_app\\Views\\Products\\Index.cshtml*",
-              "ViewState": "AgIAABQAAAAAAAAAAAAmwBwAAABPAAAAAAAAAA==",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Store_app\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-13T16:59:48.822Z",
               "EditorCaption": ""
@@ -153,16 +139,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\appsettings.json",
               "RelativeDocumentMoniker": "Store_app\\appsettings.json",
               "ToolTip": "D:\\Azal\\Store_app\\Store_app\\appsettings.json",
               "RelativeToolTip": "Store_app\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-13T16:52:20.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T16:52:20.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Store_app\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Store_app\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAmwGkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:09:48.538Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "Store_app\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAHUAAAAAAAAAAAAWwIkAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T18:35:17.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T18:35:17.17Z"
             },
             {
               "$type": "Document",

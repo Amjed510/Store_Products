@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Azal\\Store_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|solutionrelative:store_app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A972A8B6-965F-4531-ABBF-1811A0BEDE11}|Store_app\\Store_app.csproj|d:\\azal\\store_app\\store_app\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,24 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Store_app\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Store_app\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T22:38:11.527Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Store_app\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Store_app\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T23:07:59.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Models\\ProductDto.cs",
               "RelativeDocumentMoniker": "Store_app\\Models\\ProductDto.cs",
@@ -91,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Shared\\_Layout.cshtml",
@@ -99,12 +103,11 @@
               "RelativeToolTip": "Store_app\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADIAAAAAAAAAAAAAAD8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T17:00:15.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T17:00:15.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Products\\Index.cshtml",
@@ -117,19 +120,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Store_app\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Store_app\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwD8AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAzwLcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T16:57:09.387Z"
+              "WhenOpened": "2025-04-13T16:57:09.387Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20250413165627_products.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Migrations\\20250413165627_products.cs",
               "RelativeDocumentMoniker": "Store_app\\Migrations\\20250413165627_products.cs",
@@ -141,20 +145,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\appsettings.json",
               "RelativeDocumentMoniker": "Store_app\\appsettings.json",
               "ToolTip": "D:\\Azal\\Store_app\\Store_app\\appsettings.json",
               "RelativeToolTip": "Store_app\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-13T16:52:20.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Store_app\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Store_app\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T22:38:11.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Products\\Create.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Products\\Create.cshtml",
@@ -166,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Store_app\\Views\\Home\\Privacy.cshtml",
@@ -174,12 +190,11 @@
               "RelativeToolTip": "Store_app\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAHUAAAAAAAAAAAAWwIkAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T18:35:17.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T18:35:17.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Store_app\\Models\\Product.cs",
@@ -191,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "20250413165510_product.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Migrations\\20250413165510_product.cs",
               "RelativeDocumentMoniker": "Store_app\\Migrations\\20250413165510_product.cs",
@@ -203,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ApplicationDbcontext.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\services\\ApplicationDbcontext.cs",
               "RelativeDocumentMoniker": "Store_app\\services\\ApplicationDbcontext.cs",
@@ -215,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Azal\\Store_app\\Store_app\\Program.cs",
               "RelativeDocumentMoniker": "Store_app\\Program.cs",
