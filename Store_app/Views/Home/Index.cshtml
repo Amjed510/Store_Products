@@ -1,0 +1,237 @@
+﻿@{
+    ViewData["Title"] = "الرئيسية";
+}
+
+<!-- Hero Carousel Section -->
+<div class="hero-carousel mb-5">
+    <div id="featuredProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            @for (int i = 0; i < (ViewBag.FeaturedProducts?.Count ?? 0); i++)
+            {
+                <button type="button" data-bs-target="#featuredProductsCarousel" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="@(i == 0 ? "true" : "false")" aria-label="Slide @(i+1)"></button>
+            }
+        </div>
+        <div class="carousel-inner rounded-4 shadow-lg">
+            @if (ViewBag.FeaturedProducts != null)
+            {
+                for (int i = 0; i < ViewBag.FeaturedProducts.Count; i++)
+                {
+                    var product = ViewBag.FeaturedProducts[i];
+                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                        <div class="carousel-overlay"></div>
+                        <img src="/products/@product.Imgaqfillname" class="d-block w-100" alt="@product.Name">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4 fw-bold">@product.Name</h2>
+                            <p class="lead">@product.Brand</p>
+                            <p class="fs-4 badge bg-primary px-3 py-2 mb-3">@product.price $</p>
+                            <div>
+                                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="btn btn-light btn-lg px-4 me-2">
+                                    <i class="bi bi-eye me-2"></i>عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredProductsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredProductsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Welcome Section -->
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <h1 class="display-5 fw-bold mb-4">مرحباً بك في متجرنا الإلكتروني</h1>
+            <p class="lead mb-4">اكتشف تشكيلة واسعة من المنتجات عالية الجودة بأسعار تنافسية</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg px-4 gap-3">
+                    <i class="bi bi-grid-3x3-gap me-2"></i>تصفح جميع المنتجات
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Products Section -->
+<div class="container mb-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="section-title"><i class="bi bi-stars me-2 text-warning"></i>أحدث المنتجات</h2>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-outline-primary">
+                    عرض الكل <i class="bi bi-arrow-left ms-2"></i>
+                </a>
+            </div>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        @if (ViewBag.FeaturedProducts != null)
+        {
+            foreach (var product in ViewBag.FeaturedProducts)
+            {
+                <div class="col">
+                    <div class="card h-100 product-card shadow-sm">
+                        <div class="position-relative">
+                            <img src="/products/@product.Imgaqfillname" class="card-img-top" alt="@product.Name">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3">@product.categgory</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">@product.Name</h5>
+                            <p class="card-subtitle mb-2 text-muted">@product.Brand</p>
+                            <p class="card-text price-tag fw-bold">@product.price</p>
+                            <p class="card-text small text-truncate">@product.Descrption</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
+                                <i class="bi bi-eye me-2"></i>عرض التفاصيل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<!-- Categories Section -->
+@if (ViewBag.ProductsByCategory != null)
+{
+    foreach (var category in ViewBag.ProductsByCategory.Keys)
+    {
+        <div class="container mb-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="section-title"><i class="bi bi-tag me-2 text-primary"></i>@category</h2>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-primary">
+                            عرض الكل <i class="bi bi-arrow-left ms-2"></i>
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                @foreach (var product in ViewBag.ProductsByCategory[category])
+                {
+                    <div class="col">
+                        <div class="card h-100 product-card shadow-sm">
+                            <div class="position-relative">
+                                <img src="/products/@product.Imgaqfillname" class="card-img-top" alt="@product.Name">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-3">@product.categgory</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">@product.Name</h5>
+                                <p class="card-subtitle mb-2 text-muted">@product.Brand</p>
+                                <p class="card-text price-tag fw-bold">@product.price</p>
+                                <p class="card-text small text-truncate">@product.Descrption</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-primary w-100">
+                                    <i class="bi bi-eye me-2"></i>عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+
+<!-- Call to Action Section -->
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="cta-section p-5 rounded-4 text-center text-white">
+                <h2 class="display-6 fw-bold mb-3">هل تبحث عن منتج معين؟</h2>
+                <p class="lead mb-4">تصفح مجموعتنا الكاملة من المنتجات واكتشف أفضل العروض</p>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-light btn-lg px-5 py-3">
+                    <i class="bi bi-search me-2"></i>تصفح جميع المنتجات
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Hero Carousel Styles */
+    .hero-carousel {
+        margin-top: -1.5rem;
+    }
+    
+    .carousel-item {
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+    }
+    
+    .carousel-caption {
+        bottom: 5rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    /* Product Card Styles */
+    .product-card {
+        transition: all 0.3s ease;
+        border: none;
+        overflow: hidden;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .product-card img {
+        height: 200px;
+        object-fit: contain;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+    }
+    
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+    
+    .price-tag {
+        color: var(--bs-primary);
+        font-size: 1.2rem;
+    }
+    
+    /* Section Styles */
+    .section-title {
+        font-weight: 700;
+        color: #333;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        background: linear-gradient(135deg, var(--bs-primary), #0056b3);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+</style>

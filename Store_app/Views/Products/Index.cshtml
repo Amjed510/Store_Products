@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Store_app.Models.Product>
+
+@{
+    ViewData["Title"] = "المنتجات";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>قائمة المنتجات</h1>
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>إضافة منتج جديد
+        </a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="position-relative">
+                        <img src="~/products/@item.Imgaqfillname" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: contain;">
+                        <div class="position-absolute top-0 end-0 p-2">
+                            <span class="badge bg-primary rounded-pill">@item.categgory</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">@item.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.Brand</h6>
+                        <p class="card-text text-primary fw-bold">@item.price $</p>
+                        <p class="card-text small text-truncate">@item.Descrption</p>
+                        <p class="card-text">
+                            <small class="text-muted">تاريخ الإضافة: @item.createdAt.ToString("dd/MM/yyyy")</small>
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-pencil"></i> تعديل
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">
+                                <i class="bi bi-info-circle"></i> تفاصيل
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i> حذف
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .hover-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+</style>

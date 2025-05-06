@@ -1,0 +1,106 @@
+@model Store_app.Models.Product
+
+@{
+    ViewData["Title"] = "تفاصيل المنتج";
+}
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Products" asp-action="Index">المنتجات</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-lg overflow-hidden mb-5">
+        <div class="row g-0">
+            <!-- صورة المنتج -->
+            <div class="col-lg-5 position-relative">
+                <div class="product-image-container h-100 d-flex align-items-center justify-content-center bg-light p-4">
+                    <img src="/products/@Model.Imgaqfillname" class="img-fluid product-image" alt="@Model.Name">
+                </div>
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3 fs-6 px-3 py-2 rounded-pill">@Model.categgory</span>
+            </div>
+            
+            <!-- تفاصيل المنتج -->
+            <div class="col-lg-7">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <h1 class="card-title display-6 fw-bold mb-0">@Model.Name</h1>
+                        <span class="badge bg-success fs-5 px-3 py-2 rounded-pill">@Model.price</span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-award text-primary me-2 fs-5"></i>
+                            <h5 class="mb-0">العلامة التجارية</h5>
+                        </div>
+                        <p class="ms-4 fs-5 fw-light">@Model.Brand</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-card-text text-primary me-2 fs-5"></i>
+                            <h5 class="mb-0">الوصف</h5>
+                        </div>
+                        <div class="ms-4 product-description p-3 bg-light rounded">
+                            <p class="fs-6">@Model.Descrption</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-calendar-check text-primary me-2"></i>
+                            <p class="text-muted mb-0">تاريخ الإضافة: @Model.createdAt.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-lg">
+                            <i class="bi bi-pencil-square me-2"></i>تعديل
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-lg">
+                            <i class="bi bi-trash me-2"></i>حذف
+                        </a>
+                        <a asp-action="Index" class="btn btn-outline-secondary btn-lg">
+                            <i class="bi bi-arrow-left me-2"></i>العودة إلى القائمة
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .product-image {
+        max-height: 400px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-image-container:hover .product-image {
+        transform: scale(1.05);
+    }
+    
+    .product-description {
+        border-right: 4px solid var(--bs-primary);
+    }
+    
+    /* تأثيرات الأزرار */
+    .btn {
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+</style>

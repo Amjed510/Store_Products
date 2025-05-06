@@ -1,0 +1,134 @@
+﻿@model ProductDto
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3 class="card-title mb-0"><i class="bi bi-plus-circle me-2"></i>Create New Product</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" enctype="multipart/form-data" id="createProductForm">
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Name</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-tag"></i></span>
+                                <input class="form-control" asp-for="Name" placeholder="Enter product name">
+                            </div>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Brand</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-briefcase"></i></span>
+                                <input class="form-control" asp-for="Brand" placeholder="Enter brand name">
+                            </div>
+                            <span asp-validation-for="Brand" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Category</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-grid"></i></span>
+                                <select class="form-select" asp-for="Category">
+                                    <option value='Other'>Other</option>
+                                    <option value='Phones'>Phones</option>
+                                    <option value='Computers'>Computers</option>
+                                    <option value='Accessories'>Accessories</option>
+                                    <option value='Printers'>Printers</option>
+                                    <option value='Cameras'>Cameras</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Price</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+                                <input class="form-control" asp-for="Price" placeholder="0.00">
+                            </div>
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Description</label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-file-text"></i></span>
+                                <textarea class="form-control" asp-for="Description" rows="4" placeholder="Enter product description"></textarea>
+                            </div>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label fw-bold">Image</label>
+                        <div class="col-sm-8">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                <input class="form-control" type="file" asp-for="ImageFile" id="imageInput" accept="image/*">
+                            </div>
+                            <div id="imagePreview" class="d-none mb-2 text-center border rounded p-2">
+                                <img id="preview" src="#" alt="Preview" style="max-width: 100%; max-height: 200px;" class="img-thumbnail" />
+                                <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="removeImage">
+                                    <i class="bi bi-x-circle"></i> Remove
+                                </button>
+                            </div>
+                            <span asp-validation-for="ImageFile" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="offset-sm-4 col-sm-4 d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-check-circle me-2"></i>Save Product
+                            </button>
+                        </div>
+                        <div class="col-sm-4 d-grid">
+                            <a class="btn btn-outline-secondary btn-lg" asp-controller="Products" asp-action="Index" role="button">
+                                <i class="bi bi-x-circle me-2"></i>Cancel
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Image preview functionality
+        document.getElementById('imageInput').onchange = function(evt) {
+            const preview = document.getElementById('preview');
+            const imagePreview = document.getElementById('imagePreview');
+            const file = evt.target.files[0];
+            
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                imagePreview.classList.remove('d-none');
+            }
+        };
+        
+        // Remove image button functionality
+        document.getElementById('removeImage').onclick = function() {
+            const imageInput = document.getElementById('imageInput');
+            const imagePreview = document.getElementById('imagePreview');
+            
+            imageInput.value = '';
+            imagePreview.classList.add('d-none');
+        };
+    </script>
+}
